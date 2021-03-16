@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+/**
+ * @author DragonWen
+ */
 @SpringBootApplication
 @EnableEurekaClient //向服务注册中心进行注册
 public class MicroserviceProductConsumer_80 {

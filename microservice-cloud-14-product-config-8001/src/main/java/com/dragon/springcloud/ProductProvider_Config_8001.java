@@ -5,6 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+/**
+ * @author DragonWen
+ */
 @EnableEurekaClient //将此服务注册到Eureka 服务注册中心
 @MapperScan("com.dragon.springcloud.mapper")
 @SpringBootApplication

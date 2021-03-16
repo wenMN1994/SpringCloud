@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+/**
+ * @author DragonWen
+ */
 @SpringBootApplication
 @EnableEurekaClient //向服务注册中心进行注册
 //会扫描标记了指定包下@FeignClient注解的接口，并生成此接口的代理对象

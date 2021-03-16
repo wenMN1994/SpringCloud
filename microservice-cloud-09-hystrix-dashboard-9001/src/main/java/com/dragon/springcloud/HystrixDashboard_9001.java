@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
+/**
+ * @author DragonWen
+ */
 @EnableHystrixDashboard //开启服务监控
 @SpringBootApplication
 public class HystrixDashboard_9001 {
