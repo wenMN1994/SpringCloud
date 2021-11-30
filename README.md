@@ -3,7 +3,7 @@
 - 马丁·福勒 ，他于2014年发表了一篇关于微服务的博客
     博客：https://martinfowler.com/microservices/
 
-    微服务详细文档：
+    微服务详细文档： 
     英文：https://martinfowler.com/articles/microservices.html#MicroservicesAndSoa
 
   - 微服务是一种架构风格，是以开发一组小型服务的方式来作为一个独立的应用系统，每个服务都运行在自已的进程中，服务之间采用轻量级的HTTP通信机制 ( 通常是采用HTTP的RESTful API )进行通信。
