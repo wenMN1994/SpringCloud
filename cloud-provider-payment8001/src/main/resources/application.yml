@@ -1,0 +1,24 @@
+server:
+  port: 8001
+
+# Jasypt配置文件加密key
+jasypt:
+  encryptor:
+    password: test
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包 com.mysql.jdbc.Driver
+    url: jdbc:mysql://81.69.249.173:3307/spring_cloud_2020?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: ENC(CfjvzizeTkrE7MVboA44qA==)                 # 使用JasyptUtil加密后的用户名
+    password: ENC(lqYyUJaOo+p5rLO4cvlvLm1BM4TS6kCo)         # 使用JasyptUtil加密后的密码
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+
+
+
