@@ -16,11 +16,9 @@ spring:
     username: ENC(CfjvzizeTkrE7MVboA44qA==)                 # 使用JasyptUtil加密后的用户名
     password: ENC(lqYyUJaOo+p5rLO4cvlvLm1BM4TS6kCo)         # 使用JasyptUtil加密后的密码
 
-
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
-
 
 eureka:
   client:
@@ -31,5 +29,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka # 集群版
       #defaultZone: http://localhost:7001/eureka # 单机版
-
+  instance:
+    instance-id: payment8001 #服务名称
+    prefer-ip-address: true #访问路径可以显示IP地址
 
